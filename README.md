@@ -40,5 +40,9 @@ Segue abaixo o resultado após alguns segundos do programa executando.
 
 ![alt text](https://github.com/LucasRorisCube/ProjetoGPIORaspberryPi/blob/main/Images/ResultadoSensorTemperaturaHumidade.jpeg?raw=true)
 
+## Observações
+
+No repositório há um arquivo chamado "hist.txt" que contém todos os comandos executados no terminal do linux durante essa prática.
+
 
 
