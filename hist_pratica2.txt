@@ -1,0 +1,105 @@
+    1  ping www.google.com.br
+    2  sudo rasp-config
+    3  sudo raspi-config
+    4  reboot
+    5  neofetch
+    6  sudo apt install neofetch
+    7  neofetch
+    8  pinout
+    9  ifconfig
+   10  htop
+   11  uname -m
+   12  uname -r
+   13  sudo apt install ntp
+   14  history
+   15  ls -l
+   16  ls -a
+   17  cat .bash_history
+   18  sudo apt install ntp
+   19  reboot
+   20  ifconfig
+   21  history
+   22  history > hist.txt
+   23  ls
+   24  cat hist.txt
+   25  neofetch
+   26  pinout
+   27  htop
+   28  ifconfig
+   29  sudo service ntp restart
+   30  sudo apt update
+   31  python version
+   32  python
+   33  python -version
+   34  newfetch
+   35  ping www.google.com.br
+   36  sudo pip install virtualenv
+   37  sudo apt update
+   38  sudo apt install python3
+   39  python -version
+   40  python -h
+   41  python -V
+   42  python3 -m venv GVS_VE
+   43  source GVS_VE/bin/activate
+   44  pip freeze
+   45  cd GVS_VE
+   46  ls
+   47  GVS_VE pip freeze
+   48  (GVS_VE) pip freeze
+   49  ls
+   50  deactivate
+   51  sudo install freeze
+   52  sudo install fritinzg
+   53  cd ..
+   54  source GVS_VE/bin/activate
+   55  cd GVS_VE
+   56  sudo install fritzing
+   57  deactivate
+   58  cd ..
+   59  sudo install fritzing
+   60  ls
+   61  source GVS_VE/bin/activate
+   62  cd
+   63  ls
+   64  cd GVS_VE
+   65  ls
+   66  pip3 install gpiozero
+   67  deactivate
+   68  cd ..
+   69  python3 -m venv 2471
+   70  source 2471/bin/activate
+   71  ls
+   72  cd 2471
+   73  pip3 install gpiozero
+   74  pip freeze
+   75  Python
+   76  python
+   77  pip3 install RPi.GPIO
+   78  nano led.py
+   79  python led.py
+   80  nano led2.py
+   81  python led2.py
+   82  nano led2.py
+   83  python led2.py
+   84  nano led2.py
+   85  python led2.py
+   86  nano led3.py
+   87  history
+   88  history>aula3.txt
+   89  ls
+   90  cd 2471/
+   91  ls
+   92  cat comandos.txt
+   93  cd ..
+   94  cd 2471/
+   95  source bin/activate
+   96  ls
+   97  vim led3.py
+   98  python led3.py
+   99  python led4.py
+  100  python led5.py
+  101  python led6.py
+  102  python led3.py
+  103  python desafio
+  104  python contagem_regressiva.py
+  105  history > hist.txt
