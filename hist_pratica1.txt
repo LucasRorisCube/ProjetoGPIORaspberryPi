@@ -1,0 +1,22 @@
+    1  ping www.google.com.br
+    2  sudo rasp-config
+    3  sudo raspi-config
+    4  reboot
+    5  neofetch
+    6  sudo apt install neofetch
+    7  neofetch
+    8  pinout
+    9  ifconfig
+   10  htop
+   11  uname -m
+   12  uname -r
+   13  sudo apt install ntp
+   14  history
+   15  ls -l
+   16  ls -a
+   17  cat .bash_history
+   18  sudo apt install ntp
+   19  reboot
+   20  ifconfig
+   21  history
+   22  history > hist.txt
