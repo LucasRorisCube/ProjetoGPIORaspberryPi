@@ -1,11 +1,18 @@
 # Projeto GPIO RaspberryPi
-Projetos da disciplina de SEL0630 - Projetos em Sistemas Embarcados, Prática 3
+Projetos da disciplina de SEL0630 - Projetos em Sistemas Embarcados: Prática 1, 2 e 3
 
 # Nome dos integrantes:
 
 Gabriel Vinicius dos Santos (11819424)
 
 Lucas Alves Roris (11913771)
+
+# Prática 1
+
+# Pratica 2
+
+# Pratica 3
+
 ## Aplicação 1: PWM
 
 O circuito abaixo foi construído e o código "PWM.py" foi executado, resultando nos 5 valores de tensão na saída do LED vistos pelo Osciloscópio.
