@@ -31,8 +31,43 @@ pinout -> mostra as informações e numerações sobre a pinagem da Raspberry Pi
 
 ![alt text](https://github.com/LucasRorisCube/ProjetoGPIORaspberryPi/blob/main/Images/print_pinout.png?raw=true)
 
-
 # Pratica 2
+
+Sobre programação em Python para sistemas embarcados usando a GPIO da Raspberry, foram usadas duas bibliotecas, sendo delas RPi.GPIO e GPIO Zero. A segunda biblioteca é mais de alto nível e pode ser instalada com “pip install gpiozero”. Nela apenas podemos observar apenas as pinagens com GPIO, como observadas em https://pinout.xyz. Comandos como led=LED(17) para criar um objeto em python e led.on() e led.off() para piscar o Led numerado por 17 na numeração GPIO. Já a biblioteca RPi.GPIO pode ser instalada com “pip3 install RPi.GPIO” e nela podemos acessar os pinos de vários jeitos, como:
+```python
+GPIO.setmode(GPIO.BCM) # Define os pinos GPIO, semelhantemente a biblioteca anterior (https://pinout.xyz)
+GPIO.setmode(GPIO.BOARD) # Deine os pinos de acordo com a pinagem da placa, sem usar a pinagem GPIO (https://pinout.xyz)
+
+# Um simples Led piscante com essa biblioteca pode ser feito com:
+GPIO.setup(18, GPIO.OUT)
+GPIO.output(18, True)
+GPIO.output(18, False)
+```
+
+Além disso, vale ressaltar que foi usados os comandos “sudo apt install python3” para instalar o python no linux. Para o ambiente virtual, tivemos que instalar primeiramente com  “sudo pip install virtualenv” e depois “python3 -m venv 2471” para criar um ambiente virtual com nome 2471 e o comando “source 2471/bin/activate” para ativá-lo. Com isso foi possível instalar novas bibliotecas apenas no ambiente virtual criado, dentro da pasta “2471”. Com o comando “deactivate” podemos sair do ambiente virtual.
+
+Sendo assim, foram mostrados exemplos de saídas digitais. Para leituras de I/O digital podemos usar GPIO.input(pin) para checar se algum potão foi pressionado na primeira biblioteca e para a segunda biblioteca usamos button = gpiozero.Button(2) e button.is_pressed para checar se alguma entrada foi detectada. Um exemplo de detecção de eventos usando a primeira biblioteca é dado com “GPIO.add_event_detect(4, GPIO.BOTH,callback =button, bouncetime=200)”, em que o botão relacionado ao pino 4 recebe esse evento, e a função “button” em python executa se algo acontecer nesse pino. Com isso os eventos são semelhantes a interrupções previamente estudadas em outras disciplinas. Uma melhor explição visual das pinas é feita na imagem abaixo:
+
+![alt text](https://github.com/LucasRorisCube/ProjetoGPIORaspberryPi/blob/main/Images/pinagem.png?raw=true)
+
+Type-casting é usado para mudarmos a saida numérica para como gostariamos. Um Exemplo abaixo mostra o usado de Type casting:
+
+```python
+return "{:4d}{:02d}{:02d}".format(int(year),int(month),int(day))
+```
+
+Por fim,  exceção KeyboardInterrupt e GPIO cleanup se encontraram no exemplo abaixo:
+
+```python
+try:
+	while True:
+		main()
+		pass
+except KeyboardInterrupt:
+	GPIO.cleanup()
+```
+
+O código acima previne erros e espera o comando “Ctrl+C” para interromper a execução do programa. Quando a execução é interrompida a função “GPIO.cleanup()” limpa o pino, nao deixando em algum estado não requerido e evitando erros e warnings caso os pinos sejam usados para outros programas. Tudo comentado e explicado anteriormente foi usado na prática 2, principalmente o que está presente no código “contagem_regressiva.py”.
 
 # Pratica 3
 
